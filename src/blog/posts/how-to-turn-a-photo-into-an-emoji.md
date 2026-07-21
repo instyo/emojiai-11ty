@@ -1,7 +1,7 @@
 ---
 title: How to Turn a Photo into an Emoji with EmojiAI
 date: 2026-07-21
-readTime: 5 min read
+readTime: 5 min
 excerpt: Learn how to transform any selfie or photo into a beautiful AI-generated emoji in seconds using EmojiAI. Follow this step-by-step guide.
 keywords: "photo to emoji, ai emoji maker, emoji generator, custom emoji, emojiai, turn photo into emoji"
 layout: layouts/blog-post.njk
