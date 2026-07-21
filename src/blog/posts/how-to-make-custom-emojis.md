@@ -3,6 +3,7 @@ title: How to Make Custom Emojis from Your Photos
 date: 2026-05-10
 readTime: 3 min
 excerpt: Upload a photo, pick a style, and get a unique emoji in seconds. A step-by-step guide to getting the best results with EmojiAI.
+keywords: "how to make ai emoji, make emoji from photo, photo to emoji ai, ai emoji creator, custom emoji from photo"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/how-to-make-custom-emojis/

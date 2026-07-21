@@ -3,6 +3,7 @@ title: What is EmojiAI, and why would you need one?
 date: 2026-05-15
 readTime: 2 min
 excerpt: Custom emojis from text or photos — here's what makes EmojiAI different from a standard emoji keyboard.
+keywords: "what is emoji ai, emoji ai explained, ai emoji generator, custom emoji maker, text to emoji ai"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/what-is-emoji-ai/

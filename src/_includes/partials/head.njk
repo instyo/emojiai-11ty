@@ -4,7 +4,7 @@
 {% set fullTitle = title + " — EmojiAI" if title else "EmojiAI — Create unique emojis from text or photo" %}
 <title>{{ fullTitle }}</title>
 <meta name="description" content="{{ metaDesc }}">
-<meta name="keywords" content="emoji ai, ai emoji generator, ai emoji generator emojipedia, ai emoji apple, ai emoji app, ai emoji creator, apple ai emoji, apple ai emoji generator, emoji ai generator, emoji ai apple, how to make ai emoji, text to emoji ai, photo to emoji ai">
+<meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}emoji ai, ai emoji generator, ai emoji generator emojipedia, ai emoji apple, ai emoji app, ai emoji creator, apple ai emoji, apple ai emoji generator, emoji ai generator, emoji ai apple, how to make ai emoji, text to emoji ai, photo to emoji ai{% endif %}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">

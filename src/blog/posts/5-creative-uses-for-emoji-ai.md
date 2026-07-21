@@ -3,6 +3,7 @@ title: 5 Creative Uses for EmojiAI You Haven't Thought Of
 date: 2026-05-05
 readTime: 4 min
 excerpt: Profile pics, reaction stickers, gift tags, app icons, and D&D tokens — EmojiAI goes way beyond the keyboard.
+keywords: "creative emoji ideas, emoji ai uses, ai emoji app, custom emoji stickers, emoji profile pic"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/5-creative-uses-for-emoji-ai/
