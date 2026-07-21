@@ -258,6 +258,20 @@
   .badge h4{ font-size:15.5px; font-weight:700; margin-bottom:5px; font-family:'Outfit',sans-serif;}
   .badge p{ font-size: 13.5px; color: var(--ink-soft); line-height:1.55; }
 
+  /* ---------- BLOG SECTION ---------- */
+  .blog-section{ padding: 100px 0; }
+  .home-blog-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+  .home-blog-card{
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 28px 26px; display:block;
+    transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+  }
+  .home-blog-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: transparent; }
+  .home-blog-card .meta{ font-size: 13px; color: var(--ink-faint); font-weight:500; margin-bottom: 12px; }
+  .home-blog-card h3{ font-size: 17px; font-weight:700; margin-bottom: 8px; }
+  .home-blog-card p{ font-size: 14px; color: var(--ink-soft); line-height:1.55; margin-bottom: 14px; }
+  .home-blog-card .read-more{ font-size: 13.5px; font-weight:600; color: var(--purple); }
+
   /* ---------- FINAL CTA ---------- */
   .final-cta{ padding: 40px 0 120px; }
   .cta-card{
@@ -292,6 +306,7 @@
     .phone-row{ grid-template-columns:1fr; max-width:270px; margin:0 auto; gap:56px; }
     .badge-grid{ grid-template-columns:1fr; }
     .gallery-grid{ grid-template-columns: repeat(2,1fr); }
+    .home-blog-grid{ grid-template-columns:1fr; }
     .nav-links{ display:none; }
   }
 
@@ -310,6 +325,7 @@
       <a href="#styles">Styles</a>
       <a href="#showcase">Preview</a>
       <a href="#gallery">Gallery</a>
+      <a href="blog/">Blog</a>
     </div>
     <a href="#get" class="btn btn-primary">Get the app</a>
   </div>
@@ -498,6 +514,39 @@
   </div>
 </section>
 
+<section class="blog-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Latest</div>
+      <h2>From the blog</h2>
+      <p>Tips, updates, and behind-the-scenes from the EmojiAI team.</p>
+    </div>
+    <div class="home-blog-grid">
+      <a href="blog/what-is-emoji-ai/" class="home-blog-card reveal">
+        <div class="meta">May 15, 2026 · 2 min read</div>
+        <h3>What is EmojiAI, and why would you need one?</h3>
+        <p>Custom emojis from text or photos — here's what makes EmojiAI different from a standard emoji keyboard.</p>
+        <span class="read-more">Read more →</span>
+      </a>
+      <a href="blog/how-to-make-custom-emojis/" class="home-blog-card reveal">
+        <div class="meta">May 10, 2026 · 3 min read</div>
+        <h3>How to Make Custom Emojis from Your Photos</h3>
+        <p>Upload a photo, pick a style, and get a unique emoji in seconds. A step-by-step guide.</p>
+        <span class="read-more">Read more →</span>
+      </a>
+      <a href="blog/5-creative-uses-for-emoji-ai/" class="home-blog-card reveal">
+        <div class="meta">May 5, 2026 · 4 min read</div>
+        <h3>5 Creative Uses for EmojiAI You Haven't Thought Of</h3>
+        <p>Profile pics, reaction stickers, gift tags, app icons — EmojiAI goes way beyond the keyboard.</p>
+        <span class="read-more">Read more →</span>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top: 38px;" class="reveal">
+      <a href="blog/" class="btn btn-ghost">View all posts →</a>
+    </div>
+  </div>
+</section>
+
 <section class="final-cta" id="get">
   <div class="wrap">
     <div class="cta-card reveal">
@@ -518,6 +567,7 @@
       <a href="#how">How it works</a>
       <a href="#styles">Styles</a>
       <a href="#gallery">Gallery</a>
+      <a href="blog/">Blog</a>
     </div>
     <span>© 2026 EmojiAI</span>
   </div>

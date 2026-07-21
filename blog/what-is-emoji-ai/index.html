@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is EmojiAI? — EmojiAI Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAFAFB;
+    --bg-soft: #F1F0F6;
+    --ink: #16151C;
+    --ink-soft: #6B6975;
+    --ink-faint: #A6A4AF;
+    --card: #FFFFFF;
+    --border: rgba(20,18,30,0.08);
+    --border-strong: rgba(20,18,30,0.14);
+    --purple: #6C5CE7;
+    --pink: #EC4899;
+    --accent-grad: linear-gradient(135deg, #6C5CE7 0%, #A855C9 55%, #EC4899 100%);
+    --shadow-sm: 0 1px 2px rgba(16,16,20,0.05), 0 1px 1px rgba(16,16,20,0.03);
+    --shadow-md: 0 10px 26px rgba(30,20,60,0.10);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1,h2,h3,h4{ font-family: 'Outfit', -apple-system, sans-serif; letter-spacing: -0.02em; margin: 0; }
+  p{ margin: 0; }
+  a{ color: inherit; text-decoration: none; }
+  img{ max-width: 100%; display:block; }
+  button{ font-family: inherit; cursor: pointer; }
+  :focus-visible{ outline: 2px solid var(--purple); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap{ max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+
+  .nav{
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    background: rgba(250,250,251,0.72);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner{
+    max-width: 1160px; margin: 0 auto; padding: 14px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{ display:flex; align-items:center; gap:9px; font-weight:700; font-size: 17px; font-family:'Outfit',sans-serif; }
+  .logo-mark{
+    width: 26px; height: 26px; border-radius: 9px;
+    background: var(--accent-grad);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; box-shadow: inset 0 -2px 4px rgba(0,0,0,0.15), inset 0 2px 3px rgba(255,255,255,0.3);
+  }
+  .logo-mark svg{ width:14px; height:14px; }
+  .nav-links{ display:flex; gap:32px; font-size: 14.5px; color: var(--ink-soft); font-weight:500; }
+  .nav-links a{ transition: color .2s var(--ease); }
+  .nav-links a:hover{ color: var(--ink); }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding: 10px 20px; border-radius: 999px; font-weight:600; font-size: 14.5px;
+    border: 1px solid transparent; transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+  }
+  .btn-primary{
+    background: var(--accent-grad); color: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 14px 30px rgba(108,92,231,0.35); }
+  .btn-primary:active{ transform: translateY(0); }
+  .nav .btn{ padding: 9px 18px; font-size: 14px; }
+
+  .post-header{ padding: 80px 0 0; }
+  .post-header .back{ display:inline-flex; align-items:center; gap:4px; font-size: 14px; font-weight:600; color: var(--ink-soft); margin-bottom: 28px; }
+  .post-header .back:hover{ color: var(--purple); }
+  .post-header .meta{ font-size: 13px; color: var(--ink-faint); font-weight:500; margin-bottom: 16px; }
+  .post-header h1{ font-size: clamp(30px, 4vw, 44px); font-weight:700; line-height: 1.15; }
+  .post-body{
+    max-width: 700px; margin: 40px auto 80px;
+    font-size: 17px; line-height: 1.7; color: var(--ink);
+  }
+  .post-body p{ margin-bottom: 20px; }
+  .post-body h2{ font-size: 22px; font-weight:700; margin: 36px 0 14px; }
+  .post-body ul{ padding-left: 24px; margin-bottom: 20px; }
+  .post-body li{ margin-bottom: 8px; }
+  .post-body strong{ font-weight:600; }
+
+  .reveal{ opacity:0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in{ opacity:1; transform: translateY(0); }
+
+  footer{ padding: 34px 0 46px; border-top: 1px solid var(--border); }
+  .foot-inner{ display:flex; justify-content:space-between; align-items:center; font-size:13px; color: var(--ink-faint); flex-wrap:wrap; gap:12px;}
+  .foot-links{ display:flex; gap:22px; }
+  .foot-links a:hover{ color: var(--ink-soft); }
+
+  @media (max-width: 920px){
+    .nav-links{ display:none; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z" fill="white"/></svg></span> EmojiAI</a>
+    <div class="nav-links">
+      <a href="../../">Home</a>
+      <a href="../../#how">How it works</a>
+      <a href="../../#styles">Styles</a>
+      <a href="../../#showcase">Preview</a>
+      <a href="../../#gallery">Gallery</a>
+      <a href="../">Blog</a>
+    </div>
+    <a href="../../#get" class="btn btn-primary">Get the app</a>
+  </div>
+</nav>
+
+<article>
+  <div class="wrap post-header reveal">
+    <a href="../" class="back">← Back to Blog</a>
+    <div class="meta">May 15, 2026 · 2 min read</div>
+    <h1>What is EmojiAI, and why would you need one?</h1>
+  </div>
+  <div class="post-body reveal">
+    <p>EmojiAI lets you create custom emojis from text descriptions or photos. Instead of scrolling through a keyboard of predefined emojis trying to find something close, you describe exactly what you want — and the AI generates it.</p>
+
+    <h2>How it works</h2>
+    <p>Open the app, type a prompt like "a corgi wearing sunglasses riding a skateboard" — or upload a photo of anything around you — pick a style (3D, Anime, Sticker, Pixel, or the classic Emoji look), and EmojiAI generates your custom emoji in seconds.</p>
+
+    <h2>Why use EmojiAI?</h2>
+    <p>Standard emojis give you a fixed set of options. If you want something specific — your pet as an emoji, an idea that doesn't have an existing character, a consistent style for a project — you're out of luck. EmojiAI fills that gap. Every generated emoji is unique to what you asked for, and the style is always consistent because you choose it before generating.</p>
+
+    <h2>What people are making</h2>
+    <p>Users have generated everything from personal profile pics and reaction stickers to custom icons for notes and social content. The same prompt with different styles produces completely different results, so there's room to experiment.</p>
+
+    <h2>Coming soon</h2>
+    <p>The app is in active development. New styles, collections, and sharing features are on the way. If you have ideas or feedback, the App Store reviews are the best place to let us know what you'd like to see next.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a href="../../" class="logo" style="font-size:14px;"><span class="logo-mark" style="width:18px;height:18px; border-radius:6px;"><svg viewBox="0 0 24 24" fill="none" style="width:10px;height:10px;"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z" fill="white"/></svg></span> EmojiAI</a>
+    <div class="foot-links">
+      <a href="../../#how">How it works</a>
+      <a href="../../#styles">Styles</a>
+      <a href="../../#gallery">Gallery</a>
+      <a href="../">Blog</a>
+    </div>
+    <span>© 2026 EmojiAI</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach((el, idx) => {
+    el.style.transitionDelay = (idx % 4) * 60 + 'ms';
+    io.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
