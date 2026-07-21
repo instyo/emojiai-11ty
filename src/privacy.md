@@ -18,6 +18,7 @@ lastUpdated: July 1, 2026
   .legal-body ul{ padding-left: 22px; margin-bottom: 18px; }
   .legal-body li{ margin-bottom: 6px; }
 </style>
+
 {% endblock %}
 
 <div class="wrap legal-page">
@@ -31,9 +32,6 @@ lastUpdated: July 1, 2026
     <p>We collect the following types of information:</p>
     <ul>
       <li><strong>Content You Submit:</strong> Text descriptions and photos you upload to generate emojis. These are processed by our AI models to create your requested output.</li>
-      <li><strong>Device Information:</strong> Device model, operating system version, and unique device identifiers for analytics and app functionality.</li>
-      <li><strong>Usage Data:</strong> Information about how you interact with the App, such as features used, session duration, and generation frequency.</li>
-      <li><strong>Analytics Data:</strong> Anonymous aggregate data collected via third-party analytics services (see Section 5).</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -41,7 +39,6 @@ lastUpdated: July 1, 2026
     <ul>
       <li>Generate custom emoji images based on your text descriptions or photos</li>
       <li>Improve and optimize the App's performance and AI models</li>
-      <li>Analyze usage patterns to enhance user experience</li>
       <li>Detect and prevent abuse or violations of our Terms of Service</li>
       <li>Comply with legal obligations</li>
     </ul>
@@ -51,14 +48,13 @@ lastUpdated: July 1, 2026
     <p>Photos you upload are processed temporarily for emoji generation and are not stored longer than necessary to provide the service. Generated emojis are saved to your device and may be stored in our cloud infrastructure to enable the History and Collections features.</p>
 
     <h2>4. Data Storage and Retention</h2>
-    <p>Your generated emojis and account data are stored securely and retained as long as you maintain an account with us. You may delete individual emojis or your entire account at any time. When you delete content, we remove it from our active servers within a reasonable period.</p>
-    <p>We implement reasonable security measures to protect your data. However, no method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <p>Your generated emojis are stored locally on your device by default. We do not store your generated emojis on our servers unless you explicitly choose to upload or share them through a feature that requires cloud storage.</p>
 
     <h2>5. Third-Party Services</h2>
-    <p>EmojiAI uses the following third-party services:</p>
+    <p>EmojiAI uses the following third-party services to provide and improve the App:</p>
     <ul>
-      <li><strong>Ahrefs Analytics:</strong> We use Ahrefs to collect anonymous analytics about website usage. Ahrefs may use cookies and similar technologies. See Ahrefs' privacy policy for details.</li>
-      <li><strong>Apple App Store:</strong> The App is distributed through the Apple App Store. Apple's privacy policies apply to app download and purchase transactions.</li>
+      <li><strong>Apple App Store:</strong> The App is distributed through the Apple App Store. Apple's privacy policies apply to app downloads, purchases, and subscription transactions processed through your Apple ID.</li>
+      <li><strong>RevenueCat:</strong> We use RevenueCat to manage in-app subscriptions and purchases. RevenueCat may process information related to your subscription status, purchase history, and anonymous identifiers necessary to validate and manage your subscription. RevenueCat does not receive your generated emojis or other content created within the App.</li>
     </ul>
 
     <h2>6. Your Rights</h2>
@@ -80,6 +76,7 @@ lastUpdated: July 1, 2026
     <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on this page and updating the "Last updated" date. We encourage you to review this policy periodically.</p>
 
     <h2>9. Contact</h2>
-    <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us through the App Store or reach out via our social channels listed in the App.</p>
+    <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us through the App Store or reach out via our email : <i>devkwan189@gmail.com</i>.</p>
+
   </div>
 </div>
