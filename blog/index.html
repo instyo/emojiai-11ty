@@ -62,11 +62,8 @@
   .logo{ display:flex; align-items:center; gap:9px; font-weight:700; font-size: 17px; font-family:'Outfit',sans-serif; }
   .logo-mark{
     width: 26px; height: 26px; border-radius: 9px;
-    background: var(--accent-grad);
-    display:flex; align-items:center; justify-content:center;
-    flex-shrink:0; box-shadow: inset 0 -2px 4px rgba(0,0,0,0.15), inset 0 2px 3px rgba(255,255,255,0.3);
+    object-fit: cover; flex-shrink:0;
   }
-  .logo-mark svg{ width:14px; height:14px; }
   .nav-links{ display:flex; gap:32px; font-size: 14.5px; color: var(--ink-soft); font-weight:500; }
   .nav-links a{ transition: color .2s var(--ease); }
   .nav-links a:hover{ color: var(--ink); }
@@ -124,7 +121,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="../" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z" fill="white"/></svg></span> EmojiAI</a>
+    <a href="../" class="logo"><img class="logo-mark" src="../assets/emoji.jpg" alt=""> EmojiAI</a>
     <div class="nav-links">
       <a href="../">Home</a>
       <a href="../#how">How it works</a>
@@ -169,7 +166,7 @@
 
 <footer>
   <div class="wrap foot-inner">
-    <a href="../" class="logo" style="font-size:14px;"><span class="logo-mark" style="width:18px;height:18px; border-radius:6px;"><svg viewBox="0 0 24 24" fill="none" style="width:10px;height:10px;"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z" fill="white"/></svg></span> EmojiAI</a>
+    <a href="../" class="logo" style="font-size:14px;"><img class="logo-mark" src="../assets/emoji.jpg" alt="" style="width:18px;height:18px;border-radius:6px;"> EmojiAI</a>
     <div class="foot-links">
       <a href="../#how">How it works</a>
       <a href="../#styles">Styles</a>
