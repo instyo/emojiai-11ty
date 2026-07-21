@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+---
+{% block head %}
+<style>
+  .post-header{ padding-top: 80px; }
+  .post-header .back{ display:inline-flex; align-items:center; gap:4px; font-size: 14px; font-weight:600; color: var(--ink-soft); margin-bottom: 28px; }
+  .post-header .back:hover{ color: var(--purple); }
+  .post-header .meta{ font-size: 13px; color: var(--ink-faint); font-weight:500; margin-bottom: 16px; }
+  .post-header h1{ font-size: clamp(30px, 4vw, 44px); font-weight:700; line-height: 1.15; }
+  .post-body{
+    max-width: 700px; margin: 40px auto 80px;
+    font-size: 17px; line-height: 1.7; color: var(--ink);
+  }
+  .post-body p{ margin-bottom: 20px; }
+  .post-body h2{ font-size: 22px; font-weight:700; margin: 36px 0 14px; }
+  .post-body ul, .post-body ol{ padding-left: 24px; margin-bottom: 20px; }
+  .post-body li{ margin-bottom: 8px; }
+  .post-body strong{ font-weight:600; }
+</style>
+{% endblock %}
+<article>
+  <div class="wrap post-header reveal">
+    <a href="/blog/" class="back">&larr; Back to Blog</a>
+    <div class="meta">{{ page.date | dateDisplay }} · {{ readTime }} read</div>
+    <h1>{{ title }}</h1>
+  </div>
+  <div class="wrap post-body reveal">
+    {{ content | safe }}
+  </div>
+</article>

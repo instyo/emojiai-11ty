@@ -1,0 +1,14 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><img class="logo-mark" src="/assets/emoji.jpg" alt=""> EmojiAI</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/#how">How it works</a>
+      <a href="/#styles">Styles</a>
+      <a href="/#showcase">Preview</a>
+      <a href="/#gallery">Gallery</a>
+      <a href="/blog/"{% if page.url and '/blog/' in page.url %} class="active"{% endif %}>Blog</a>
+    </div>
+    <a href="/#get" class="btn btn-primary">Get the app</a>
+  </div>
+</nav>
