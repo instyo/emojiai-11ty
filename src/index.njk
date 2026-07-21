@@ -439,7 +439,7 @@ description: Create unique emojis from text or photo. Describe your idea or uplo
       <p>Tips, updates, and behind-the-scenes from the EmojiAI team.</p>
     </div>
     <div class="home-blog-grid">
-{%- for post in collections.post | reverse %}
+{%- for post in collections.post | reverse | limit(3) %}
       <a href="{{ post.url }}" class="home-blog-card reveal">
         <div class="meta">{{ post.date | dateDisplay }} · {{ post.data.readTime }} read</div>
         <h3>{{ post.data.title }}</h3>
