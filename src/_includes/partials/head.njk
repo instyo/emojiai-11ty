@@ -1,6 +1,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if title %}{{ title }} — EmojiAI{% else %}EmojiAI — Create unique emojis from text or photo{% endif %}</title>
+{% set metaDesc = description or excerpt or "Create unique emojis from text or photo. Describe your idea or upload a photo, pick a style, and EmojiAI turns it into your own custom emoji in seconds." %}
+{% set fullTitle = title + " — EmojiAI" if title else "EmojiAI — Create unique emojis from text or photo" %}
+<title>{{ fullTitle }}</title>
+<meta name="description" content="{{ metaDesc }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ fullTitle }}">
+<meta property="og:description" content="{{ metaDesc }}">
+<meta property="og:image" content="{{ site.url }}{{ image or site.image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ fullTitle }}">
+<meta name="twitter:description" content="{{ metaDesc }}">
+<meta name="twitter:image" content="{{ site.url }}{{ image or site.image }}">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
