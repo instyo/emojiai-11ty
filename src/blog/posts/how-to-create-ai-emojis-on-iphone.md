@@ -1,15 +1,13 @@
 ---
 title: How to Create AI Emojis on iPhone
 date: 2026-07-21
-readTime: 6 min read
+readTime: 6 min
 excerpt: Learn how to create custom AI emojis from text or photos on your iPhone. Discover the easiest way to generate personalized emojis, export them as stickers, and share them in Messages, WhatsApp, and Telegram.
 keywords: "ai emoji,emoji ai,ai emoji generator,ai emoji app,text to emoji,photo to emoji,iphone emoji maker,custom emoji,emoji generator,ai stickers"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/how-to-create-ai-emojis-on-iphone/
 ---
-
-# How to Create AI Emojis on iPhone
 
 Want to create your own unique emojis instead of using the same ones everyone else has? Thanks to AI, you can now generate personalized emojis from a simple text prompt or even transform your own photos into expressive emoji-style artwork—all directly on your iPhone.
 

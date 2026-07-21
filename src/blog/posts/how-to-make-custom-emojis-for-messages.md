@@ -1,15 +1,13 @@
 ---
 title: How to Make Custom Emojis for Messages
 date: 2026-07-21
-readTime: 6 min read
+readTime: 6 min
 excerpt: Learn how to create custom emojis for Apple's Messages app using AI. Turn text prompts or photos into personalized emojis and share them in your conversations.
 keywords: "custom emoji messages,emoji for messages,ai emoji,emoji ai,ai emoji generator,iphone emoji maker,custom emoji iphone,messages stickers,emoji from photo,text to emoji"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/how-to-make-custom-emojis-for-messages/
 ---
-
-# How to Make Custom Emojis for Messages
 
 Want to make your Messages conversations more personal and fun? Instead of using the same built-in emojis as everyone else, you can create your own custom emojis with AI.
 

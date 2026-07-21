@@ -1,15 +1,13 @@
 ---
 title: What Is an AI Emoji?
 date: 2026-07-21
-readTime: 5 min read
+readTime: 5 min
 excerpt: Discover what AI emojis are, how they work, and how you can create custom emojis from text or photos on your iPhone using AI.
 keywords: "what is ai emoji,ai emoji,emoji ai,ai emoji generator,custom emoji,text to emoji,photo to emoji,iphone emoji maker,ai emoji app"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/what-is-an-ai-emoji/
 ---
-
-# What Is an AI Emoji?
 
 AI has changed the way we create digital art, avatars, and stickers—and now it's transforming emojis too. Instead of choosing from a limited emoji keyboard, you can create completely unique emojis based on your own ideas.
 

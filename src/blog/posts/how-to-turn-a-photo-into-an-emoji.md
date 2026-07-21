@@ -1,15 +1,13 @@
 ---
 title: How to Turn a Photo into an Emoji
 date: 2026-07-21
-readTime: 6 min read
+readTime: 6 min
 excerpt: Learn how to turn any photo into a custom AI emoji on your iPhone. Transform selfies, pets, and more into fun emojis in just a few taps.
 keywords: "photo to emoji,turn photo into emoji,ai emoji,emoji ai,ai emoji generator,photo to emoji ai,emoji from photo,custom emoji,iphone emoji maker,ai emoji app"
 layout: layouts/blog-post.njk
 tags: post
 permalink: /blog/how-to-turn-a-photo-into-an-emoji/
 ---
-
-# How to Turn a Photo into an Emoji
 
 Have you ever wanted an emoji that looks like you, your pet, or your favorite object? With AI, you can transform almost any photo into a unique emoji in just a few seconds.
 
