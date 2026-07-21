@@ -10,6 +10,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
+  eleventyConfig.addFilter("dateToISO", function(date) {
+    if (!date) return new Date().toISOString();
+    return new Date(date).toISOString();
+  });
+
   return {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk"
